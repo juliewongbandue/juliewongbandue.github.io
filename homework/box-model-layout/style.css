@@ -1,0 +1,31 @@
+.container {
+	background: grey;
+	margin-top:15px;
+	margin: 10px 80px;
+	padding: 20px;
+}
+
+#title {
+	background: black;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+.red {
+	background: red;
+	padding: 20px 10px;
+	text-align: center;
+}
+
+#blue {
+	color: blue;
+}
+
+#green {
+	color: green;
+}
+
+#yellow {
+	color:yellow;
+}
