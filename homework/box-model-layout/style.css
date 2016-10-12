@@ -1,19 +1,24 @@
 .container {
-	background: grey;
-	margin-top:15px;
-	margin: 10px 80px;
+	background: rgb(222, 222, 222);
+	width:75%;
+	margin: 0 auto;
 	padding: 20px;
 }
 
-#title {
+.nav {
 	background: black;
-	color: white;
 	text-align: center;
 	padding: 10px;
+	margin-bottom:25px;
+}
+
+.nav a {
+	color: white;
+	text-decoration: none;
 }
 
 .red {
-	background: red;
+	background: tomato;
 	padding: 20px 10px;
 	text-align: center;
 }
