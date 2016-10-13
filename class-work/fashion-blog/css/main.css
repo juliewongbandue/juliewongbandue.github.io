@@ -3,16 +3,13 @@
 	padding: 54px;
 	font-family: "Lato";
 }
-
 image?{
 	max-width: 720%
 }
-
 .container header h1 {
 	line-height: 1.5
 	color: red;
 }
-
 nav .bottom-nav a {
   padding: 0 10px;
   font-size: 20px;
@@ -20,7 +17,6 @@ nav .bottom-nav a {
   text-decoration: none;
   color: red;
 }
-
 nav .bottom-nav a:last-child {
   border-right-style: none
 }
