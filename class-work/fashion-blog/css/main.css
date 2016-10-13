@@ -1,0 +1,26 @@
+.container {
+	width:720px;
+	padding: 54px;
+	font-family: "Lato";
+}
+
+image?{
+	max-width: 720%
+}
+
+.container header h1 {
+	line-height: 1.5
+	color: red;
+}
+
+nav .bottom-nav a {
+  padding: 0 10px;
+  font-size: 20px;
+  border-right: 2px solid grey;
+  text-decoration: none;
+  color: red;
+}
+
+nav .bottom-nav a:last-child {
+  border-right-style: none
+}
