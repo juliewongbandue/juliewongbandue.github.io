@@ -1,22 +1,32 @@
 .container {
 	width:720px;
 	padding: 54px;
-	font-family: "Lato";
+	font-family: "Lato"
 }
-image?{
-	max-width: 720%
+header h1 {
+	line-height: 1.5;
+	color: #DD0000;
 }
-.container header h1 {
-	line-height: 1.5
-	color: red;
+header h3 {
+	color: black
+}
+article p {
+	color: #444444
+}
+nav .top-nav a {
+	color: dddddd
+	margin:
 }
 nav .bottom-nav a {
   padding: 0 10px;
   font-size: 20px;
   border-right: 2px solid grey;
   text-decoration: none;
-  color: red;
+  color: #DD0000;
 }
 nav .bottom-nav a:last-child {
   border-right-style: none
+}
+nav .bottom-nav a:hover {
+	color:  #aa0000
 }
