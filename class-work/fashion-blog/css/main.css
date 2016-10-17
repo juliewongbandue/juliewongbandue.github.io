@@ -13,9 +13,18 @@ header h3 {
 article p {
 	color: #444444
 }
+.continues {
+	color: #DD0000;
+}
+.continues: hover {
+	color: #aa0000
+}
 nav .top-nav a {
 	color: dddddd
 	margin:
+}
+nav .top-nav: hover {
+	color: black
 }
 nav .bottom-nav a {
   padding: 0 10px;
