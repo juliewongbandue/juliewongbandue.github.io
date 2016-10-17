@@ -2,9 +2,16 @@ body {
 	font-family: helvetica;
 	font-weight: lighter;
 	font-size: 16px;
+	text-align: center;
 }
-li {
-	list-style-type: none;
-	display: inline;
-	margin: 40px;
+nav a{
+	text-decoration: none;
+	padding: 10px;
+  	font-size: 10px;
+  	border-right: 2px solid grey;
+  	text-decoration: none;
+  	color: black;
+}
+nav a:last-child{
+	border-right: none;
 }

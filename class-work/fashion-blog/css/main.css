@@ -34,8 +34,12 @@ nav .bottom-nav a {
   color: #DD0000;
 }
 nav .bottom-nav a:last-child {
+<<<<<<< Updated upstream
   border-right-style: none
 }
 nav .bottom-nav a:hover {
 	color:  #aa0000
 }
+=======
+  border-right-style: none
+>>>>>>> Stashed changes
