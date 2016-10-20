@@ -2,8 +2,7 @@
 font-family: 'Oswald', sans-serif;
 font-family: 'Merriweather', serif;
 font-family: 'Source Sans Pro', sans-serif;*/
-
-body, h1, h2, p {
+body, header, h1, h2, p {
 	margin: 0;
 }
 .Merriweather {
@@ -38,6 +37,7 @@ nav a{
 	width:100%;
 	background-image: url(../img/coworking.jpg);
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 .subtext {
 	font-style: italic;
@@ -59,11 +59,14 @@ nav a{
 	padding: 30px;
 	font-family: 'Oswald', sans-serif;
 	font-size: 15px;
+	margin: 50px 50px 50px 100%;
 }
 .box h1 {
 	font-family: 'Oswald', sans-serif;
 	}
 }
-.content {
-	float:left;
+.bottom-boxes {
+	background-color: #c6c6c6;
+  float: left;
+  width: calc(100%/3)
 }
