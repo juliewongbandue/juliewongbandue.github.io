@@ -1,7 +1,7 @@
 .container {
 	width:720px;
 	padding: 54px;
-	font-family: "Lato"
+	font-family: "Lato";
 }
 .container header h1 {
 	line-height: 1.5;
@@ -59,10 +59,10 @@ nav.bottom-nav a{
 	margin-top: 15px;
 }
 nav.bottom-nav a:last-child {
-  border-right-style: none
+  border-right-style: none;
 }
 nav.bottom-nav a:hover {
-	color:  #aa0000
+	color:  #aa0000;
 }
 footer {
 	margin: 20px;

@@ -5,7 +5,6 @@ font-family: 'Source Sans Pro', sans-serif;*/
 body, header, h1, h2, p {
 	margin: 0;
 }
-}
 .Merriweather {
 	font-family: 'Merriweather', serif;
 }
@@ -14,14 +13,16 @@ header h1{
 	font-size: 25px;
 	float:left;
 	clear:right;
+	padding:10px;
 }
 .headerfooter {
 	background: black;
-	height: 20px;
+	height: 50px;
 	margin: 0;
-	padding: 15px 15px;
-	width: 100%;
 	border-bottom: 3px solid yellow;
+}
+.footer {
+	border-bottom: none;
 }
 nav {
 	margin-right: 5%;
@@ -31,7 +32,7 @@ nav a{
 	float: right;
 	font-family: 'Oswald', sans-serif;
 	font-size: 15px;
-	margin: 0 15px;
+	margin: 15px;
 	color: white;
 }
 .subtext {
@@ -56,16 +57,15 @@ nav a{
 #yellow-button{
 	background: yellow;
 }
-.bottom-boxes {
+section {
 	display: inline-block;
 	background-color: #c6c6c6;
 	float: left;
 	width: calc(100%/3);
-	padding: 20px;
 }
 .oswald {
 	font-family: 'Oswald', sans-serif;
-	font-weight: ;
+	text-align: justify;
 }
 button {
 	background: grey;
@@ -73,7 +73,7 @@ button {
 	height: 45px;
 	width: 100%;
 	font-size: 15px;
-	font-style: bold;
+	margin-top:10px;
 	font-family: 'Oswald';
 }
 .box {
@@ -93,5 +93,10 @@ footer {
 	background: black;
 	color: white;
 	clear:both;
+	position:absolute;
+	bottom:0;
+	width:100%;
 }
-
+footer h3 {
+	margin:10px;
+}
