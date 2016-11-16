@@ -13,6 +13,22 @@
 // 6: Figure out a way to update the number in #total (Hint: look back at the calculator box example)
 // 7: Empty the input in #newEntry (clear it out)
 
-$(document).ready(function () {
+// parseFloat
+// append
+// if else statement for non-numbers
 
+$(document).ready(function () {
+var total = 0
+	$('#entry').submit(function(e){
+		e.preventDefault();
+
+		var input = parseFloat ($('#newEntry').val());
+		total += input;
+		
+		$('#total').text('$' + total);
+
+		$('#entries').append('<tr><td>' + input + '</td></tr>');
+		$('#newEntry').val('');
+
+	});
 })

@@ -18,5 +18,13 @@
 
 
 $(document).ready(function() {
+	$('#city-type').change(function(){
+		var city = $(this).val();
+		
+	$('body')
+		.removeClass()
+		.addClass(city); 
+
+	})
 
 });

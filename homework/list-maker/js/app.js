@@ -20,8 +20,7 @@ $(document).ready(function () {
 		var newItem = $('#item').val();
 		var list = '<li>' + newItem + '</li>';
 		appendItem(list);
-		$('#item').val('');
-		$('#item').focus();
+		$('#item').val('').focus();
 	});
 
 	// 1A. This anonymous function should create a variable, newItem equal to
