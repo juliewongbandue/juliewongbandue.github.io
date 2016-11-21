@@ -4,6 +4,10 @@
 .openSansCondensed {
 	font-family: Open Sans Condensed, sans-serif;
 }
+#map {
+	height: 500px;
+	width: 100%;
+}
 h1 {
 	font-size: 40px;
 	padding: 20px;
@@ -37,11 +41,6 @@ h2{
 	height: 250px;
 	width: 250px;
 	margin: 20px 0px;
-}
-#map {
-	background-color: lightblue;
-	height: 800px;
-	width: 100%;
 }
 #address {
 	padding-bottom: 20px;

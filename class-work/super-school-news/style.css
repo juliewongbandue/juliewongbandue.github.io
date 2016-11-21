@@ -1,0 +1,91 @@
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+	background-color: yellow;
+	overflow: hidden;
+	padding: 10px 25px;
+}
+
+header h1 {
+	float: left;
+	font-size: 30px;
+}
+
+header nav {
+	margin-top: 6px;
+	float: right;
+}
+
+header nav a {
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+section {
+	background-color: black;
+	padding: 10px;
+	overflow: auto;
+}
+
+article {
+	width: 49%;
+	background-color: white;
+	padding: 10px;
+	float: left;
+	box-sizing: border-box;
+}
+
+/* targets the 1st article; nth-child(2) would target the 2nd article*/
+article:nth-child(1) {
+	margin-right: 10px;
+}
+
+article h1 {
+	font-size: 20px;
+	text-align: center;
+	padding: 5px 0;
+}
+
+/* when screen is less than 730px, run this*/
+@media (max-width: 730px) {
+	header h1, header nav {
+		float: none;
+		text-align: center;
+	}
+	article {
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+}
+
+@media (max-width: 430px) {
+	.container {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
