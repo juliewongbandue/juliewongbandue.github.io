@@ -12,7 +12,6 @@ initMap()
 
 $(document).ready(function(){
 	var ajaxData;
-	
 	init();
 
 	function init(){
@@ -46,6 +45,22 @@ $(document).ready(function(){
 			})
 		}
 	};
+	// RUN A SEARCH
+	$('.search').submit(function (searchEntry) {
+		searchEntry.preventDefault(); 
+		var userSearchEntry = $('.searchEntry').val();
+		for (i=0; i<ajaxData.length; i++) {
+			var museumName = ajaxData[i].data.name;
+			var address= ajaxData[i].data.address1;
+			var zip= ajaxData[i].data.zip;
+			if (userSearchEntry = museumName){
+				$('.museumName').html('museum name here')
+				$('#address').html()
+				$('#website').html()
+
+			} else ()
+		}
+	})
 
 });
 		
