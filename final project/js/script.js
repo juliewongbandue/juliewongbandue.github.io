@@ -9,14 +9,19 @@ function initMap() {
 }
 
 initMap() 
-
+//write jquery below here
 $(document).ready(function(){
+	//to access jSON data via ajax
 	var ajaxData;
+	//run initialize function
 	init();
-
+	//call init function to...
 	function init(){
+		//get data from json
 		getData();
+		//check if var ajaxData is being read by the dom
 		console.log(ajaxData);
+		//display the map markers
 		displayMarkers();
 	};
 	function getData(){
@@ -37,45 +42,54 @@ $(document).ready(function(){
 		for (i=0; i<ajaxData.length; i++){
 			var lat = parseFloat (ajaxData[i].data.location.lat);
 			var lng = parseFloat (ajaxData[i].data.location.long);
-
 			var marker = new google.maps.Marker ({
+			//Note: the lat/long are labelled in correctly on the JSON file. 
 			position: {lat: lng, lng: lat},
 			map: map,
 			})
 		}
 	};
-	
-	var $userSearchEntry = $('#searchEntry');
-	var $museumInfo = $('.museumInfo');
+
+	//Search code here. The user can search by museum or address.
+	var $userSearchEntry = $('.searchEntry');
+	var $museumInfo = $('#museumInfo');
 
 	$('.search').submit(function (event) {
 		event.preventDefault();
 		var searchStr = $userSearchEntry.val();
-		console.log (searchStr);
+		searchStr = searchStr.toLowerCase();
 
 		var matchingResults = ajaxData.filter(function(item) {
 			var itemInfo = item.data;
+			// if name isn't an empty string, and contains the search string, add the item to results
 			if ( itemInfo.name !== '' && itemInfo.name.toLowerCase().indexOf(searchStr ) !== -1 ) {
 				return true;
 			}
+			// if the string isn't in name, check the first address in the same way
 			if ( itemInfo.address1 !== '' && itemInfo.address1.toLowerCase().indexOf( searchStr ) !== -1 ) {
 				return true;
 			}
+			// finally if the first two fail, check the second address
 			if ( itemInfo.address2 !== '' && itemInfo.address2.toLowerCase().indexOf( searchStr ) !== -1 ) {
 				return true;
 			}
 		});
+		//empty the <div> that you'll be placing the musuem info in before adding anything
+		$museumInfo.empty();
+		//empty the search
+		$userSearchEntry.val('');
 
+		//put it in the dom!
 		matchingResults.forEach(function(item){
-			var itemInfo = item.data; 
+			var itemInfo = item.data;
+			var zip = parseInt (itemInfo.zip);
+			//appends the info into ($#museumInfo)
 			$museumInfo.append(
-				'<li>' +
-				'<div>' + itemInfo.name + '</div>' +
-				'<div>' + itemInfo.address1 + '</div>' +
-				'<div>' + itemInfo.address2 + '</div>' +
-				'<span>' + itemInfo.state + ', ' + '</span>' + '<span>' + itemInfo.zip +
-				'</li>'
-				)
+				'<h2 class ="museumName raleway">' + itemInfo.name + '</h2>' +
+				'<p class ="openSansCondensed">' + itemInfo.address1 + '</p>' +
+				'<p>' + itemInfo.address2 + '</p>' +
+				'<span>' + itemInfo.state + ',' + '<span>' + zip + '</span>'
+				);
 		})
 
 	})
