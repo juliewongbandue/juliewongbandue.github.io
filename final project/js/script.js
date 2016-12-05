@@ -17,7 +17,7 @@ $(document).ready(function(){
 	function init(){
 		getData();
 		console.log(ajaxData);
-		displayData();
+		displayMarkers();
 	};
 	function getData(){
 		$.ajax({
@@ -33,11 +33,10 @@ $(document).ready(function(){
     		}
 		})
 	};
-	function displayData(){
+	function displayMarkers(){
 		for (i=0; i<ajaxData.length; i++){
 			var lat = parseFloat (ajaxData[i].data.location.lat);
 			var lng = parseFloat (ajaxData[i].data.location.long);
-			console.log(lat, lng);
 
 			var marker = new google.maps.Marker ({
 			position: {lat: lng, lng: lat},
@@ -45,22 +44,39 @@ $(document).ready(function(){
 			})
 		}
 	};
-	// RUN A SEARCH
-	$('.search').submit(function (searchEntry) {
-		searchEntry.preventDefault(); 
-		var userSearchEntry = $('.searchEntry').val();
-		for (i=0; i<ajaxData.length; i++) {
-			var museumName = ajaxData[i].data.name;
-			var address= ajaxData[i].data.address1;
-			var zip= ajaxData[i].data.zip;
-			if (userSearchEntry = museumName){
-				$('.museumName').html('museum name here')
-				$('#address').html()
-				$('#website').html()
+	
+	var $userSearchEntry = $('#searchEntry');
+	var $museumInfo = $('.museumInfo');
 
-			} else ()
-		}
+	$('.search').submit(function (event) {
+		event.preventDefault();
+		var searchStr = $userSearchEntry.val();
+		console.log (searchStr);
+
+		var matchingResults = ajaxData.filter(function(item) {
+			var itemInfo = item.data;
+			if ( itemInfo.name !== '' && itemInfo.name.toLowerCase().indexOf(searchStr ) !== -1 ) {
+				return true;
+			}
+			if ( itemInfo.address1 !== '' && itemInfo.address1.toLowerCase().indexOf( searchStr ) !== -1 ) {
+				return true;
+			}
+			if ( itemInfo.address2 !== '' && itemInfo.address2.toLowerCase().indexOf( searchStr ) !== -1 ) {
+				return true;
+			}
+		});
+
+		matchingResults.forEach(function(item){
+			var itemInfo = item.data; 
+			$museumInfo.append(
+				'<li>' +
+				'<div>' + itemInfo.name + '</div>' +
+				'<div>' + itemInfo.address1 + '</div>' +
+				'<div>' + itemInfo.address2 + '</div>' +
+				'<span>' + itemInfo.state + ', ' + '</span>' + '<span>' + itemInfo.zip +
+				'</li>'
+				)
+		})
+
 	})
-
-});
-		
+})
