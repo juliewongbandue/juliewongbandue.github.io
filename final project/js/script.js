@@ -13,14 +13,16 @@ initMap()
 $(document).ready(function(){
 	//to access jSON data via ajax
 	var ajaxData;
+	var markers = []; 
+	console.log (markers);
+
 	//run initialize function
 	init();
-	//call init function to...
+
+	//define init function
 	function init(){
 		//get data from json
 		getData();
-		//check if var ajaxData is being read by the dom
-		console.log(ajaxData);
 		//display the map markers
 		displayMarkers();
 	};
@@ -46,7 +48,9 @@ $(document).ready(function(){
 			//Note: the lat/long are labelled in correctly on the JSON file. 
 			position: {lat: lng, lng: lat},
 			map: map,
-			})
+			});
+			//push the markers found from json into the markers array
+			markers.push(marker);
 		}
 	};
 
@@ -56,7 +60,10 @@ $(document).ready(function(){
 
 	$('.search').submit(function (event) {
 		event.preventDefault();
+
+		//get the value of <input>
 		var searchStr = $userSearchEntry.val();
+		//change that value to lowercase
 		searchStr = searchStr.toLowerCase();
 
 		var matchingResults = ajaxData.filter(function(item) {
@@ -83,6 +90,9 @@ $(document).ready(function(){
 		matchingResults.forEach(function(item){
 			var itemInfo = item.data;
 			var zip = parseInt (itemInfo.zip);
+			var lat = parseFloat (itemInfo.location.long);
+			var long = parseFloat (itemInfo.location.lat);
+			console.log (lat, long)
 			//appends the info into ($#museumInfo)
 			$museumInfo.append(
 				'<h2 class ="museumName raleway">' + itemInfo.name + '</h2>' +
