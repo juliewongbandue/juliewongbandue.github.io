@@ -3,7 +3,10 @@ var map;
 function initMap() {
 
 	map = new google.maps.Map(document.getElementById('map'), {
-	center: {lat: 40.7128, lng: -74.0059},
+	center: {
+		lat: 40.7829, 
+		lng: -73.9654
+	},
 	zoom: 13
     });
 }
@@ -13,13 +16,12 @@ initMap()
 $(document).ready(function(){
 	//to access jSON data via ajax
 	var ajaxData;
-	var markers = []; 
-	console.log (markers);
+	var markers = [];
 
+	console.log (markers);
 	//run initialize function
 	init();
-
-	//define init function
+	//define init function to
 	function init(){
 		//get data from json
 		getData();
@@ -46,11 +48,13 @@ $(document).ready(function(){
 			var lng = parseFloat (ajaxData[i].data.location.long);
 			var marker = new google.maps.Marker ({
 			//Note: the lat/long are labelled in correctly on the JSON file. 
-			position: {lat: lng, lng: lat},
+			position: {
+				lat: lng,
+				lng: lat
+			},
 			map: map,
 			});
-			//push the markers found from json into the markers array
-			markers.push(marker);
+			markers.push (marker);
 		}
 	};
 
@@ -63,6 +67,7 @@ $(document).ready(function(){
 
 		//get the value of <input>
 		var searchStr = $userSearchEntry.val();
+
 		//change that value to lowercase
 		searchStr = searchStr.toLowerCase();
 
@@ -81,18 +86,36 @@ $(document).ready(function(){
 				return true;
 			}
 		});
-		//empty the <div> that you'll be placing the musuem info in before adding anything
+		//define function to look at markers array
+		function setMapOnAll(map) {
+  			for (var i = 0; i < markers.length; i++) {
+    		markers[i].setMap(map);
+  			}
+		}
+		//clear the markers
+		setMapOnAll(null);
+		//empty the <div> that you'll be placing the museum info in before adding anything
 		$museumInfo.empty();
 		//empty the search
 		$userSearchEntry.val('');
 
-		//put it in the dom!
+		//put searched museum info on the dom!
 		matchingResults.forEach(function(item){
 			var itemInfo = item.data;
 			var zip = parseInt (itemInfo.zip);
 			var lat = parseFloat (itemInfo.location.long);
 			var long = parseFloat (itemInfo.location.lat);
-			console.log (lat, long)
+			console.log (lat, long);
+			var marker = new google.maps.Marker ({
+				position: {
+					lat: lat, 
+					lng: long
+				},
+				map: map,
+
+			});
+			markers.push (marker);
+
 			//appends the info into ($#museumInfo)
 			$museumInfo.append(
 				'<h2 class ="museumName raleway">' + itemInfo.name + '</h2>' +
