@@ -105,7 +105,6 @@ $(document).ready(function(){
 			var zip = parseInt (itemInfo.zip);
 			var lat = parseFloat (itemInfo.location.long);
 			var long = parseFloat (itemInfo.location.lat);
-			console.log (lat, long);
 			var marker = new google.maps.Marker ({
 				position: {
 					lat: lat, 
@@ -114,6 +113,7 @@ $(document).ready(function(){
 				map: map,
 
 			});
+			//redefine the markers array so you can place them on the map
 			markers.push (marker);
 
 			//appends the info into ($#museumInfo)
