@@ -5,14 +5,22 @@
 	font-size: 30px;
 }
 p, article {
-	font-size: 20px;
-    width: 500px;
-    padding: 20px;
+	font-size: 18px;  
+}
+article {
+	width: 500px;
+    padding: 30px;
     margin: 0 auto;
 }
 .profile-image {
 	height: 400px;
 }
-@media (max-width: 500px) {
 
+@media (max-width: 375px){
+	article {
+		width: inherit;
+	    padding: 30px;
+	    margin: 0 auto;
+	    font-size: small;
+	}
 }
