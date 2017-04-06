@@ -39,4 +39,8 @@ article {
 }
 #museumInfo {
 	text-align: center;
+	/*enter bootstrap grid system formatting here*/
+}
+@media (max-width: 880px){
+	
 }
