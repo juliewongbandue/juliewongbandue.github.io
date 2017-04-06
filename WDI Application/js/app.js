@@ -1,6 +1,6 @@
 $(function(){
 		$(".adjectives").typed({
-			strings: ["a painter", "a designer", "creative", "a future programmer..."],
+			strings: ["super cool", "witty", "a lover of the interwebs", "a creative", "a painter", "a designer", "a future programmer..."],
 			typeSpeed: 0
 		});
 	});
