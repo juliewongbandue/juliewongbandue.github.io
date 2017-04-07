@@ -21,7 +21,27 @@ article {
 .profile-image {
 	height: 400px;
 }
-
+.typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -30,7 +50,7 @@ article {
   		height: inherit;
   	}
   	p, article {
-  		font-size: 18px;
+  		font-size: 20px;
   	}
 	article {
 		width: inherit;
