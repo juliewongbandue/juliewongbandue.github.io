@@ -4,12 +4,18 @@
 	padding-top: 50px;
 	font-size: 30px;
 }
+p {
+	padding:20px;
+}
+.article-h1 {
+	padding: 20px;
+}
 p, article {
 	font-size: 18px;  
 }
 article {
 	width: 500px;
-    padding: 30px;
+    padding: 0px 50px 50px 50px;
     margin: 0 auto;
 }
 .profile-image {
@@ -20,10 +26,15 @@ article {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2){
+  	.profile-image {
+  		height: inherit;
+  	}
+  	p, article {
+  		font-size: 18px;
+  	}
 	article {
 		width: inherit;
 	    padding: 30px;
 	    margin: 0 auto;
-	    font-size: small;
 	}
 }
