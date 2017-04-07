@@ -66,6 +66,9 @@ article {
 	    padding: 30px;
 	    margin: 0 auto;
 	}
+	.article-h1 {
+		font-size: 60px;
+	}
 	.contact-icon {
 		height: 175px;
     	padding: 25px
