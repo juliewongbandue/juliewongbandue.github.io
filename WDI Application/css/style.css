@@ -49,6 +49,12 @@ article {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2){
+  	header h1 {
+  		font-size: 75px;
+  	}
+  	header {
+  		padding-bottom: 20px;
+  	}
   	.profile-image {
   		height: inherit;
   	}
@@ -59,5 +65,9 @@ article {
 		width: inherit;
 	    padding: 30px;
 	    margin: 0 auto;
+	}
+	.contact-icon {
+		height: 175px;
+    	padding: 25px
 	}
 }
