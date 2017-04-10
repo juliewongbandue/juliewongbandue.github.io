@@ -24,6 +24,7 @@ article {
 .profile-image {
 	height: 400px;
 }
+/*--------for cursor--------*/
 .typed-cursor{
 	opacity: 1;
 	-webkit-animation: blink 0.7s infinite;
@@ -45,6 +46,7 @@ article {
 	50% { opacity:0; }
 	100% { opacity:1; }
 }
+/*--------media query here for iphone 6--------*/
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
