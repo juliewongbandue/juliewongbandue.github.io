@@ -1,6 +1,6 @@
 .wrapper {
 	text-align: center;
-	font-family: Special Elite;
+	font-family: 'Roboto Mono', monospace;
 	padding-top: 50px;
 	font-size: 30px;
 }
@@ -14,7 +14,7 @@ p {
 	padding: 20px;
 }
 p, article {
-	font-size: 18px;  
+	font-size: 18px;
 }
 article {
 	width: 500px;
@@ -47,9 +47,9 @@ article {
 	100% { opacity:1; }
 }
 /*--------media query here for iphone 6--------*/
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2){
   	header h1 {
   		font-size: 75px;
