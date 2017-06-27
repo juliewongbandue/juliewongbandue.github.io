@@ -5,4 +5,4 @@ Skills Section
 Projects Section: (this will probably change, I might create a section for each project)
 ![Projects Section](./screenshots/projects.png)
 Contact Section
-![Contact Section](./screenshots/projects.png)
+![Contact Section](./screenshots/contact.png)
