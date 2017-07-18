@@ -4,71 +4,118 @@
 	<title>Julie Wongbandue</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
-		<div class = "headerName">Julie Wongbandue</div>
+		<div class = "headerName">julie wongbandue</div>
 		<div class = "introDiv">
 			<header class = "introText">
-					<h1>Julie Wongbandue</h1>
+					<h1>JULIE WONGBANDUE</h1>
 					<p>I am <span class="adjectives"></span></p>
 			</header>
 			<article>
 				<nav>
 					<a href="https://github.com/juliewongbandue"><img src="images/githubicon.png" alt=""></a>
 					<a href="https://www.linkedin.com/in/julie-wongbandue-31517537/"><img src="images/linkedinicon.png" class="contact-icon"></a>
-					<a href="https://www.facebook.com/juliewongbandue"><img src="images/facebookicon.png" class="contact-icon"></a>
 					<a href="https://www.instagram.com/juliewongbandue/"><img src="images/instagramicon.png" class="contact-icon"></a>
 				</nav>
+				<div class ="scrollDiv">
+					(scroll)
+					<br>
+					<img src="images/downarrow.png" class = "arrow" alt="">
+				</div>
+
 			</article>
-			<div>
-				<img src="images/arrow.png" class = "arrow" alt="">
-				<p>scroll</p>
-			</div>
 
 		</div>
 
 		<div class = "skillsDiv">
 			<div class = "frontEndDiv">
-				<h3>Front End</h3>
-				<img src="images/frontend.png" alt="">
+				<div class="front">
+					<h3 class ="grey">FRONT END</h3>
+					<img src="images/frontend.png" alt="" class = "img">
+				</div>
+				<div class = "back grey">
+					<ul>
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>JavaScript</p>
+					</ul>
+				</div>
 			</div>
+
 			<div class = "backEndDiv">
-				<h3>Back End</h3>
-				<img src="images/backend.png" alt="">
+				<div class ="front">
+					<h3 class = "grey">BACK END</h3>
+					<img src="images/backend.png" alt="" class = "img">
+				</div>
+				<div class = "back grey">
+					<ul>
+						<p>PSQL</p>
+						<p>Node.js</p>
+						<p>Ruby</p>
+					</ul>
+				</div>
 			</div>
 		</div>
 
-		<h3 class ="projectsDivHeader">Projects</h3>
-		<div class = "projectsDiv">
-			<div class = "project">
-				<img src="images/race.png" alt="">
-			</div>
-			<div class = "project">
-				<img src="images/simonsays.png" alt="">
-			</div>
-			<div class = "project">
-				<img src="images/todo.png" alt="">
-			</div>
-		</div>
 
-		<h3 class="contactDivHeader">Contact</h3>
+		<h3 class ="projectsDivHeader grey">PROJECTS</h3>
+			<div class = "project">
+				<div class = "projectPositionDiv">
+					<img src="./images/simonsays.gif" alt="" class ="gif">
+					<div class = "projectText">
+						<h3>SIMON SAYS</h3>
+						<span>
+							Using HTML, CSS, and JavaScript, I created a simple memory game of Simon Says. Player One (Simon), can click on a pattern of boxes that player two must copy. At each successful turn, the grid grows. If player two is unsuccessful, the grid starts from the beginning again.
+							<br>
+							<a href="#">Check it out on Github</a>
+						</span>
+					</div>
+				</div>
+				</div>
+			<div class = "project artSeen">
+				<div class= "projectPositionDiv">
+					<div class = "projectText">
+						<h3>ART SEEN</h3>
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nobis, quaerat distinctio est quam! Perferendis voluptatem fuga, vero quis excepturi consequatur qui ea voluptates error molestiae delectus consequuntur, hic! Dolorum.
+						<br>
+						<a href="#">Check it out on Github</a>
+					</span>
+					</div>
+					<img src="./images/artseen.gif" alt="" class = "gif">
+				</div>
+			</div>
+			<div class = "project">
+				<div class = "projectPositionDiv">
+					<img src="" alt="" class = "gif">
+					<div class = "projectText">
+						<h3>PROJECT TITLE</h3>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores eligendi voluptatum. Temporibus quis fugiat, vitae neque ipsum voluptatum, aliquam velit quam aliquid corporis totam dolor vel aperiam fuga nulla.
+						<br>
+						<a href="#">Check it out on Github</a>
+					</div>
+				</div>
+			</div>
+
+		<h3 class="contactDivHeader">CONTACT</h3>
 		<div class ="contactDiv">
 			<div class ="contact">
-				<h3>Email</h3>
-				<img src="images/mail.png" alt="">
+				<h3>EMAIL</h3>
+					<img src="images/mail.png" alt="" class = "img">
 			</div>
 			<div class ="contact">
-				<h3>Phone</h3>
-				<img src="images/phone.png" alt="">
+				<h3>PHONE</h3>
+				<img src="images/phone.png" alt="" class = "img">
 			</div>
 		</div>
 
 	</div> <!-- end of wrapper -->
-
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="js/typed.js"></script>
-	<script src="js/app.js"></script>
 </body>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/typed.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+<script src="js/app.js"></script>
 </html>

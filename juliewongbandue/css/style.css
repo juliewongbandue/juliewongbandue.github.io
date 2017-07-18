@@ -1,7 +1,19 @@
+/* entire container, keeps perspective */
+
+/*end of flipper stuff*/
+
 .wrapper {
 	text-align: center;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 30px;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	background-color: white;
+	color: #212121;
 }
 .headerName {
 	position: fixed;
@@ -24,75 +36,102 @@ p {
 .article-h1 {
 	padding: 20px;
 }
-p, article {
+p, article, .projectText {
 	font-size: 18px;
 }
 article {
 	width: 500px;
-    padding: 0px 50px 50px 50px;
-    margin: 0 auto;
+  padding: 0px 50px 50px 50px;
+  margin: 0 auto;
+	height: 44%;
+	position: relative;
+}
+.arrow {
+  text-align: center;
+  height: 128px;
+  width: 128px;
+}
+.scrollDiv {
+	position: absolute;
+	bottom: 0;
+	left: 38%;
 }
 .skillsDiv {
 	display:flex;
-	background: black;
+	background: #212121;
 	color: black;
 	height: 100vh;
 }
-.frontEndDiv, .backEndDiv {
+.grey {
+	color: #212121;
+}
+.gif {
+	height: 400px;
+	width: 580px;
+	border: 1px solid #212121;
 	margin: auto;
-	border-radius: 10px;
+}
+.img {
+	width: 35vw;
+}
+.frontEndDiv, .backEndDiv, .front, .back {
+	margin: auto;
+	text-align: center;
 	background-color: white;
 }
+.front, .back{
+	padding: 45px;
+}
+
 .skillsDiv h3{
 	margin-top:40px;
 }
-.projectsDiv {
+.project {
 	display:flex;
 	flex-wrap: wrap;
-	height: 75vh;
+	height: 100vh;
 	text-align:center;
 }
-.project {
-	border: 1px solid grey;
-	border-radius: 5px;
-	padding: 5px;
-	margin: auto;
+.projectPositionDiv{
+	display: flex;
+	margin:20% auto;
 }
 .projectsDivHeader, .contactDivHeader {
 	padding-top: 30px;
 }
+.projectText {
+	width: 25vw;
+	height: 30vh;
+	margin: 0 25px;
+	padding: 5%;
+	line-height: 1.5em;
+	background-color: #212121;
+	color: white;
+	font-size: 15px;
+	font-weight:100;
+}
+.projectText h3 {
+	font-weight: 300;
+	line-height: 2em;
+	border-bottom: 1px solid white;
+}
+.artSeen {
+	background-color: pink;
+}
 .contactDivHeader{
-	background-color: lightgrey;
+	background-color: #212121;
+	color: white;
 }
 .contactDiv {
-	height: 75vh;
-	background-color: lightgrey;
+	background-color: #212121;
 	display:flex;
+	color: white;
+	font-size: 15px;
+	font-weight:300;
 }
 .contact {
 	margin: auto;
 }
-.arrow {
-  background-image:url("./arrow.jpg");
-  text-align: center;
-  height: 128px;
-  width: 128px;
-  bottom: 0;
-  animation: bounce 2s infinite;
-	margin-top: 150px;
-}
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100%{
-    transform: translateY(0px)
-  }
-  40% {
-    transform: translateY(-40px)
-  }
-  60% {
-    transform: translateY(-20px)
-  }
-}
-
 /*--------for cursor--------*/
 .typed-cursor{
 	opacity: 1;
@@ -115,33 +154,11 @@ article {
 	50% { opacity:0; }
 	100% { opacity:1; }
 }
+
 /*--------media query here for iphone 6--------*/
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2){
-  	header h1 {
-  		font-size: 75px;
-  	}
-  	header {
-  		padding-bottom: 20px;
-  	}
-  	.profile-image {
-  		height: inherit;
-  	}
-  	p, article {
-  		font-size: inherit;
-  	}
-	article {
-		width: inherit;
-	    padding: 30px;
-	    margin: 0 auto;
-	}
-	.article-h1 {
-		font-size: 60px;
-	}
-	.contact-icon {
-		height: 175px;
-    	padding: 25px
-	}
+
 }
