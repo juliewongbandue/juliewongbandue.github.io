@@ -72,7 +72,7 @@ article {
 	margin: auto;
 }
 .img {
-	width: 35vw;
+	width: 100%;
 }
 .frontEndDiv, .backEndDiv, .front, .back {
 	margin: auto;
