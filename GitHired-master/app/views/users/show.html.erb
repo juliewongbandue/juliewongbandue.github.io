@@ -1,0 +1,60 @@
+<div class="logoBanner-backgroundDiv">
+ <%= render './shared/banner' %>
+</div>
+
+
+<div class = "wrapper">
+
+  <h1 class = "robotoCondensedBold welcomeText">Let's git you hired, <%= @user.name%>!</h1>
+
+  <div class = "profileWrapper">
+    <div class = "profileFlex">
+      <a href="/users/<%="#{params[:id]}"%>/favejobs/search" class = "searchLink robotoMono">Click here to search for a job!</a>
+      <div class= "profileInfoDiv robotoMono">
+        <h3 class = "compliment robotoMono">Just lettin' you know...<%= Compliment.new %></h3>
+        <% @userInfo.each do |x| %>
+        <br>NAME: <%= x.name %>
+        <br>LOCATION: <%= x.location %>
+        <br>SKILLZ: <%= x.skills %>
+        <br>BIO:<%= x.bio %>
+        <% end %>
+      </div>
+    </div>
+
+    <div class = "savedJobDiv">
+      <div class = "divHeader">
+        <h1 class = "robotoMono">YOUR SAVED JOBS</h1>
+      </div>
+
+      <% if @favejobs %>
+      <% @favejobs.each do |x| %>
+      <div class = "savedJob">
+        <%= button_to("x", delete_job_path(:job_id => x.id), method: "delete", class: "deleteButton") %>
+          <!-- JOBDIV WITH TASKS -->
+          <div class = "flex">
+            <div class = "listing">
+              <h2 class = "robotoMono"><%= x.title %></h2>
+              <p class = "robotoMono"> Location: <%= x.location %></p>
+            </div>
+            <div class = "note robotoMono">
+              <p class = "robotoMono">
+                <h4>MOST RECENT NOTE</h4>
+                <%= To_do.where(:favejob_id => x.id).last.try(:created_at)%>
+                <!-- idk why this isn't working: .strftime('%^b %d %I:%M %p') -->
+                <br><%= To_do.where(:favejob_id => x.id).last.try(:note)%>
+              </p>
+            </div>
+          </div>
+
+        <%= form_for(:job, url: "/users/#{params[:id]}/to_dos" , method: "get") do |f| %>
+        <%= f.hidden_field(:id, :value => x.id) %>
+        <%= f.submit("Job profile", class: "button") %>
+        <% end %>
+      </div>
+      <% end %>
+      <% end %>
+    </div>
+
+  </div>
+
+</div>

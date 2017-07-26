@@ -1,0 +1,344 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+  margin: 0;
+  background-color: #212121;
+}
+.wrapper {
+  margin: 10px;
+}
+/*====================FONTS=================*/
+.robotoMono{
+  font-family: 'Roboto Mono', monospace;
+  line-height: 30px;
+  font-size: 15px;
+}
+.robotoCondensedReg{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.robotoCondensedBold{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight:700;
+}
+
+/*=============LOGO FORMATTING=============*/
+.logoMain {
+  display: block;
+  margin: 0 auto;
+  height: 30vh;
+  padding-top: 5%;
+}
+.logoBanner {
+  display: block;
+  width: 30vw;
+  /*margin: auto;*/
+  padding: 4px;
+}
+.logoBanner-backgroundDiv {
+  display: flex;
+  padding: 1%;
+  /*background-color: #212121;*/
+  justify-content: space-between;
+  background-color: white;
+}
+
+/*============BUTTON FORMATTING============*/
+.button {
+  border: none;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  background-color: #2D4279;
+  color: white;
+}
+.button:hover {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.viewButton {
+  display: inline;
+}
+.deleteButton{
+  border: none;
+  border: 1px solid white;
+  background: none;
+  color: white;
+  float: right;
+  font-size: 15px;
+}
+.deleteButton:hover{
+  background-color:	#707070;
+  border: 1px solid transparent;
+}
+/*================LINK FORMATTING=============*/
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  background-color: black;
+  color: white;
+}
+.welcomeLink{
+  text-decoration: none;
+  color: white;
+}
+
+/*===================FORM FORMATTING==============*/
+.formWrapper{
+  text-align: center;
+  width: 30vw;
+  margin: .5% auto;
+  background-color: white;
+  padding: 10px
+}
+.form {
+  width: 25vw;
+  margin: 0 auto;
+  text-align:center;
+}
+.formInput{
+  display: block;
+  border: none;
+  border-bottom: 2px solid black;
+  line-height: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  margin: 10% 0;
+}
+.formInput:focus{
+  outline: none;
+}
+.editNoteTextArea{
+  border: none;
+  width: 100;
+  font-size: 12px;
+  text-align: left;
+  height: 30vh;
+}
+.addTaskForm{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/*===========SIGNUP FORM STYLING===========*/
+.signUpFormWrapper{
+  text-align: center;
+  width: 70vw;
+  margin: .5% auto;
+  background-color: white;
+  padding: 10px;
+}
+.signUpForm{
+  display: flex;
+  justify-content:space-around;
+}
+.signUpInputDivs{
+  width:40%;
+}
+.textArea{
+  width: 100%;
+  border: 2px solid black;
+}
+
+/*=========SEARCH PAGE DIV FORMATTING=======*/
+.resultsWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 85vw;
+  margin: 0 auto;
+}
+.result{
+  background-color: white;
+  width: 25%;
+  margin: 2% auto;
+  padding: 10px;
+}
+
+/*===========NAV IS IN THE BANNER============*/
+nav {
+  float: right;
+  display: flex;
+}
+.logout, .profile, .saveButton, .backToSearchButton, .searchButton {
+  margin: 5px;
+}
+
+/*=============PROFILE PAGE FORMATTING==========*/
+.welcomeText {
+  color: white;
+  text-transform: uppercase;
+}
+.listing{
+  width: 40%;
+  font-size: 12px;
+}
+.taskDiv {
+  width: 30vw;
+  background-color: white;
+  padding: 20px 4px;
+  overflow: scroll;
+  height: 40vh;
+}
+.savedJobDiv {
+  width: 60vw;
+  background-color: white;
+  padding: 20px 4px;
+  overflow: scroll;
+  height: 60vh;
+}
+.savedJob{
+  margin: 1%;
+  padding: 5%;
+  background-color: grey;
+  color: white;
+}
+.flex{
+  display: flex;
+}
+.divHeader{
+  position: fixed;
+  background:rgba(0,0,0,0.5);
+  color: white;
+  width: 25%;
+  text-align: center;
+}
+.note {
+  width: 40%;
+  background-color: #696969;
+  padding: 5px;
+  color: black;
+}
+.searchLink{
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align:center;
+  color: white;
+  background-color: #2D4279;
+  padding: 2%;
+  display: block;
+  margin: 0px;
+}
+.searchLink:hover {
+  background-color: black;
+  color: white;
+}
+.compliment {
+  text-transform: uppercase;
+}
+.profileFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.profileInfoDiv{
+  width: 30vw;
+  height: 35vh;
+  background-color: grey;
+  padding: 14px;
+}
+
+/*=============FAVEJOB/NEW.HTML.ERB STYLING=============*/
+.jobDescriptionDiv {
+  width: 45vw;
+  margin: 10px;
+  background:white;
+  height: 30vh;
+  overflow:scroll;
+}
+.jobListingDiv {
+  display:flex;
+  flex-direction: column;
+}
+.jobDetails {
+  width: 45vw;
+  margin: 10px;
+  color: white;
+}
+.jobDescription{
+  width: 90%;
+  margin: auto;
+  font-size: 12px;
+}
+.jobListingWrapper, .profileWrapper{
+  display:flex;
+  justify-content: space-around;
+}
+.mapDiv, .savedJobFlex{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/*=============TO_DOS/INDEX.HTML.ERB STYLING===========*/
+.savedJobDetails{
+  width: 30vw;
+  font-size: 12px;
+  line-height: 1.3em;
+  color: white;
+}
+.jobProfileWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.checkBoxDiv {
+  display:flex;
+}
+.savedJobDescription {
+  width: 30vw;
+  background-color: white;
+  padding: 20px 4px;
+  overflow: scroll;
+  height: 40vh;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.task {
+  margin: 1%;
+  padding: 5%;
+  background-color: grey;
+  color: white;
+}
+/*===========map=================*/
+
+.map {
+  width: 40vw;
+  height: 50vh;
+  margin: 10px;
+}
+.savedJobMap {
+  width: 30vw;
+  height: 62vh;
+  margin: 10px;
+}
+
+/*============FOOTER==============*/
+.footer{
+   position:absolute;
+   bottom:0;
+   width:100%;
+   text-align: right;
+   text-transform: uppercase;
+   font-size: 10px;
+   color: grey;
+}
+.footer p {
+  display: block;
+  padding-right: 2%;
+}

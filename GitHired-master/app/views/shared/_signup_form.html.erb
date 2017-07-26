@@ -1,0 +1,16 @@
+
+  <%= form_for(@user) do |f| %>
+    <div class = "signUpForm">
+      <div class = "signUpInputDivs">
+        <%= f.text_field :name, placeholder: "name", class: "formInput robotoMono"%>
+        <%= f.email_field :email, html: "formInput", placeholder: "email", class: "formInput robotoMono"%>
+        <%= f.password_field :password, html: "formInput", placeholder: "password", class: "formInput robotoMono" %>
+      </div>
+      <div class = "signUpInputDivs">
+        <%= f.text_field :location, html: "formInput", placeholder: "location", class: "formInput robotoMono"%>
+        <%= f.text_field :skills, html: "formInput", placeholder: "skills", class: "formInput robotoMono"%>
+        <%= f.text_area :bio, html: "formInput", placeholder: "tell us something about yourself...", class: "textArea robotoMono"%>
+      </div>
+    </div>
+  <%= f.submit "Sign Up", class: "button robotoCondensedReg" %>
+  <% end %>
