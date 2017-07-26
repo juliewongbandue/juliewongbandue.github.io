@@ -1,7 +1,6 @@
 /* entire container, keeps perspective */
 
 /*end of flipper stuff*/
-
 .wrapper {
 	text-align: center;
 	font-family: 'Roboto Mono', monospace;
@@ -80,11 +79,17 @@ article {
 	background-color: white;
 }
 .front, .back{
-	padding: 45px;
+	padding: 70px;
 }
-
 .skillsDiv h3{
 	margin-top:40px;
+}
+.fixedElement {
+    background-color: #c0c0c0;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
 }
 .project {
 	display:flex;
