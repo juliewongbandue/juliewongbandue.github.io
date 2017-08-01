@@ -13,15 +13,6 @@ $(function() {
     typeSpeed: 0
   });
 
-  // $(".frontEndDiv").mouseover(e => {
-  //   console.log("i was hovered!");
-  //   $(".backEndDiv").flip();
-  // });
-  // $(".frontEndDiv").mouseout(e => {
-  //   console.log("unhovered")
-  //   $(".backEndDiv").flip(true);
-  // });
-
   $(".frontEndDiv").flip({
     trigger: "hover"
   });
