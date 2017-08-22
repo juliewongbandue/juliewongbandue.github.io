@@ -9,11 +9,6 @@ a {
   color: inherit;
 }
 
-a:hover {
-  background-color: white;
-  color: #212121;
-}
-
 
 /*==========HEADER==========*/
 
@@ -129,6 +124,12 @@ article {
 
 .projectsDivHeader, .contactDivHeader {
   padding-top: 30px;
+}
+
+.fixed{
+  position: fixed;
+  bottom: 93vh;
+  left: 44%;
 }
 
 .projectText {

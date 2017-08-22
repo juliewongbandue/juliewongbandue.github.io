@@ -21,5 +21,13 @@ $(function() {
     trigger: "hover"
   });
 
+  // $(window).scroll(()=> {
+  //   var scroll = $(window).scrollTop();
+  //   var skillsDivTop = $(".projectsDivHeader").offset().top;
+  //   var skillsDivHeight = $(".projectsDivHeader").height()
+  //   if (scroll > skillsDivTop + skillsDivHeight){
+  //       $(".projectsDivHeader").addClass('fixed')
+  //   }
+  // })
 
 });
