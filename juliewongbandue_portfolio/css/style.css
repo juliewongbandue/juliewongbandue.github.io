@@ -32,12 +32,13 @@ p {
   padding: 20px;
 }
 
-.article-h1 {
-  padding: 20px;
+.small {
+  font-size: 12px;
 }
 
-p, article, .projectText, span {
-  font-size: 12px;
+.big {
+  font-size: 45px;
+  line-height: 3em;
 }
 
 article {
@@ -60,6 +61,7 @@ article {
   left: 38%;
 }
 
+/*===========SKILLS DIVS ===========*/
 .skillsDiv {
   display: flex;
   background: #212121;
@@ -67,6 +69,25 @@ article {
   height: 100vh;
 }
 
+.frontEndDiv, .backEndDiv {
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  height: 60%;
+  width: 40vw;
+}
+
+.front, .back {
+  padding: 70px;
+}
+
+.skillsDiv h3 {
+  margin-top: 40px;
+}
+
+.skillListItem{
+  line-height: 3em;
+}
 
 /*============PROJECT DIVS=========*/
 
@@ -82,27 +103,9 @@ article {
 }
 
 .img {
-  width: 100%;
+  padding: 5%;
+  margin-top: 20px;
 }
-
-.projectGitIcon {
-  width: 40px;
-}
-
-.frontEndDiv, .backEndDiv, .front, .back {
-  margin: auto;
-  text-align: center;
-  background-color: white;
-}
-
-.front, .back {
-  padding: 70px;
-}
-
-.skillsDiv h3 {
-  margin-top: 40px;
-}
-
 .fixedElement {
   background-color: #c0c0c0;
   position: fixed;
@@ -110,18 +113,24 @@ article {
   width: 100%;
   z-index: 100;
 }
-
 .project {
   display: flex;
   height: 100vh;
 }
-
-.projectPositionDiv {
-  display: flex;
-  margin: 20% auto;
-  width: 80vw;
+.projectIcon{
+  height: 40px;
 }
-
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flexWrap {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 5%;
+}
 .projectsDivHeader, .contactDivHeader {
   padding-top: 30px;
 }
@@ -134,11 +143,12 @@ article {
 
 .projectText {
   width: 25%;
-  height: 400px;
-  margin: 0 25px;
-  padding: 9px;
+  margin: auto;
+  height: 80%;
+  overflow: scroll;
+  padding:1%;
   line-height: 1.5em;
-  background-color: #212121;
+  background-color: rgb(33,33,33);
   color: white;
   font-size: 15px;
   font-weight: 100;
@@ -152,11 +162,6 @@ article {
   line-height: 2em;
   border-bottom: 1px solid white;
 }
-
-.artSeen {
-  background-color: #888888;
-}
-
 
 /*===============CONTACT FOOTER===============*/
 

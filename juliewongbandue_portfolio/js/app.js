@@ -1,5 +1,7 @@
+
 $(function() {
   console.log("jquery live");
+  // TYPED ANIMATION
   var $adj = $(".adjectives");
   $adj.typed({
     strings: [
@@ -12,22 +14,11 @@ $(function() {
     ],
     typeSpeed: 0
   });
+  // AOS SCROLL ANIMATION
+  AOS.init({
+    duration: 1200
+  })
 
-  $(".frontEndDiv").flip({
-    trigger: "hover"
-  });
-
-  $(".backEndDiv").flip({
-    trigger: "hover"
-  });
-
-  // $(window).scroll(()=> {
-  //   var scroll = $(window).scrollTop();
-  //   var skillsDivTop = $(".projectsDivHeader").offset().top;
-  //   var skillsDivHeight = $(".projectsDivHeader").height()
-  //   if (scroll > skillsDivTop + skillsDivHeight){
-  //       $(".projectsDivHeader").addClass('fixed')
-  //   }
-  // })
+  
 
 });

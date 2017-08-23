@@ -14,16 +14,16 @@
 		<div class="introDiv">
 			<header>
 				<h1 class="introText">JULIE WONGBANDUE</h1>
-				<p>I am <span class="adjectives"></span></p>
+				<p class= "small">I am <span class="adjectives"></span></p>
 			</header>
-			<article>
+			<article class= "small">
 				<nav>
 					<a href="https://github.com/juliewongbandue"><img src="images/githubicon.svg" alt=""></a>
 					<a href="https://www.linkedin.com/in/julie-wongbandue-31517537/"><img src="images/linkedinicon.svg" class="contact-icon"></a>
 					<a href="https://www.instagram.com/juliewongbandue/"><img src="images/instagramicon.svg" class="contact-icon"></a>
 				</nav>
-				<p>[under construction]</p>
-				<div class="scrollDiv">
+				<p class= "small">[under construction]</p>
+				<div class="scrollDiv small">
 					(scroll)
 					<br>
 					<img src="images/downarrow.png" class="arrow" alt="">
@@ -33,34 +33,28 @@
 
 		</div>
 
+		<!--======================SKILLS=================-->
+
 		<div class="skillsDiv">
 
-			<div class="frontEndDiv">
-				<div class="front">
+			<div class="frontEndDiv" data-aos="flip-left">
 					<h3 class="grey">FRONT END</h3>
 					<img src="images/frontend.png" alt="" class="img">
-				</div>
-				<div class="back grey">
-					<ul>
-						<p>HTML</p>
-						<p>CSS</p>
-						<p>JavaScript (JQuery, React)</p>
+					<ul class="small">
+						<li class="skillListItem" data-aos="fade-up">HTML</li>
+						<li class="skillListItem" data-aos="fade-up">CSS</li>
+						<li class="skillListItem" data-aos="fade-up">JavaScript (JQuery, React)</li>
 					</ul>
-				</div>
 			</div>
 
-			<div class="backEndDiv">
-				<div class="front">
+			<div class="backEndDiv" data-aos="flip-right">
 					<h3 class="grey">BACK END</h3>
 					<img src="images/backend.png" alt="" class="img">
-				</div>
-				<div class="back grey">
-					<ul>
-						<p>PSQL</p>
-						<p>Node.js</p>
-						<p>Ruby</p>
+					<ul class="small">
+						<li class="skillListItem" data-aos="fade-up">PSQL</li>
+						<li class="skillListItem" data-aos="fade-up">Node.js</li>
+						<li class="skillListItem" data-aos="fade-up">Ruby (Rails)</li>
 					</ul>
-				</div>
 			</div>
 
 		</div>
@@ -69,81 +63,86 @@
 		<h3 class="projectsDivHeader grey">PROJECTS</h3>
 
 		<!-- ================YOUR PROJECTS ARE HERE============= -->
-		<div class="project artSeen">
-			<div class="projectPositionDiv">
-				<div class="projectText">
-					<a href="https://github.com/juliewongbandue/bbbudget"><img src="./images/githubicon_projects.svg" class="projectIcon" /></a>
-					<a href=""><img src="" class="projectIcon" /></a>
-				</div>
-				<div class="projectText">
+
+		<!-- BASIC BITCH BUDGET -->
+		<div class="project">
+			<div class="flex">
+				<div class="projectText small" data-aos="fade-right">
 					<h3>BASIC BITCH BUDGET</h3>
-					<p>TECHNOLOGIES: HTML, CSS, Javascript, Node.js, React, Express, bCrypt, PSQL, Chart.js</p>
-					<span>ABOUT: An app created for those who want to visualize and track their spending. This app is still under construction! But please check out my Github to see where I am with it ;).</span>
+					<p class= "small">TECHNOLOGIES: HTML, CSS, Javascript, Node.js, React, Express, bCrypt, PSQL, Chart.js</p>
+					<span class="small">ABOUT: An app created for those who want to visualize and track their spending. This app is still under construction! But please check out my Github to see where I am with it ;).</span>
+					<br/><a href="https://github.com/juliewongbandue/bbbudget"><img src="./images/githubicon_projects.svg" class="projectIcon" /></a>
 				</div>
 				<img src="./images/bbbudget.gif" alt="" class="gif">
 			</div>
 		</div>
 
+		<!-- GITHIRED -->
 		<div class="project">
-			<div class="projectPositionDiv">
+			<div class="flex">
 				<img src="images/githired.gif" alt="" class="gif">
 				<img src="./images/webicon.svg" class="projectIcon" />
-				<div class="projectText">
+				<div class="projectText small" data-aos="fade-left">
 					<h3>GITHIRED</h3>
-					<p>TECHNOLOGIES: Ruby on Rails, HTML, CSS, HttParty, bCrypt</p>
-					<span>ABOUT: This was a group project where I was mainly in charge of the front end design UI/UX and some back end development. Using Github's job search API, we created an app allows users to search for jobs in the technology field, filtered by location and programming language of interest. Users are able to view each job on a separate page, which is complete with a map and, if interested, save the job to their profile as a favorite.</spans>
-				</div>
-				<div class="projectText">
-					<a href="https://github.com/juliewongbandue/gitHired"><img src="./images/githubicon_projects.svg" class="projectIcon" /></a>
-					<a href="http://git-hired-app.herokuapp.com/"><img src="./images/webicon.svg" class="projectIcon" /></a>
+					<p class= "small">TECHNOLOGIES: Ruby on Rails, HTML, CSS, HttParty, bCrypt</p>
+					<span class="small">ABOUT: This was a group project where I was mainly in charge of the front end design UI/UX and some back end development. Using Github's job search API, we created an app allows users to search for jobs in the technology field, filtered by location and programming language of interest. Users are able to view each job on a separate page, which is complete with a map and, if interested, save the job to their profile as a favorite.</span>
+					<div class="flexWrap">
+						<a href="https://github.com/juliewongbandue/gitHired"><img src="./images/githubicon_projects.svg" class="projectIcon" /></a>
+						<a href="http://git-hired-app.herokuapp.com/"><img src="./images/webicon.svg" class="projectIcon" /></a>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="project artSeen">
-			<div class="projectPositionDiv">
-				<div class="projectText">
-					<a href="https://github.com/juliewongbandue/artSeen"><img src="./images/githubicon_projects.svg" class="projectIcon" /></a>
-					<a href="https://artseen.herokuapp.com/"><img src="./images/webicon.svg" class="projectIcon" /></a>
-				</div>
-				<div class="projectText">
+	<!-- ARTSEEN -->
+		<div class="project">
+			<div class="flex">
+				<div class="projectText small" data-aos="fade-right">
 					<h3>ART SEEN</h3>
-					<p>TECHNOLOGIES: HTML, CSS, and JavaScript, Node.js, Express, PSQL</p>
-					<span>ABOUT: A web app designed for the wandering gallery hopper. With the use of Google Maps and Places APIs, A user is able to see galleries nearby, save those galleries in a list, and take notes for each gallery.</span>
+					<p class= "small">TECHNOLOGIES: HTML, CSS, and JavaScript, Node.js, Express, PSQL</p>
+					<span class="small">ABOUT: A web app designed for the wandering gallery hopper. With the use of Google Maps and Places APIs, A user is able to see galleries nearby, save those galleries in a list, and take notes for each gallery.</span>
+					<div class="flexWrap">
+						<a href="https://github.com/juliewongbandue/artSeen"><img src="./images/githubicon_projects.svg" class="projectIcon" /></a>
+						<a href="https://artseen.herokuapp.com/"><img src="./images/webicon.svg" class="projectIcon" /></a>
+					</div>
 				</div>
 				<img src="./images/artseen.gif" alt="" class="gif">
 			</div>
 		</div>
 
+		<!-- SIMON SAYS -->
 		<div class="project">
-			<div class="projectPositionDiv">
+			<div class="flex">
 				<img src="./images/simonsays.gif" alt="" class="gif">
-				<div class="projectText">
+				<div class="projectText small" data-aos="fade-left">
 					<h3>SIMON SAYS</h3>
-					<p>TECHNOLOGIES: HTML, CSS, and JavaScript</p>
-					<span>ABOUT: A simple memory game of Simon Says. Player One (Simon), can click on a pattern of boxes that player two must copy. At each successful turn, the grid grows. If player two is unsuccessful, the grid starts from the beginning again.</span>
-				</div>
-				<div class="projectText">
-					<a href="https://github.com/juliewongbandue/simonSays"><img src="./images/githubicon_projects.svg" class="projectIcon" /></a>
-					<a href=""><img src="./images/webicon.svg" class="projectIcon" /></a>
+					<p class= "small">TECHNOLOGIES: HTML, CSS, and JavaScript</p>
+					<span class="small">ABOUT: A simple memory game of Simon Says. Player One (Simon), can click on a pattern of boxes that player two must copy. At each successful turn, the grid grows. If player two is unsuccessful, the grid starts from the beginning again.</span>
+					<div class="flexWrap">
+						<a href="https://github.com/juliewongbandue/simonSays"><img src="./images/githubicon_projects.svg" class="projectIcon" /></a>
+						<a href=""><img src="./images/webicon.svg" class="projectIcon" /></a>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<h3 class="contactDivHeader">CONTACT</h3>
 		<div class="contactDiv">
 			<div class="contact">
-				<span>juliewongbandue@gmail.com</span>
-				<img src="images/mail.png" alt="" class="img">
+				<h3 class="contactDivHeader big">CONTACT</h3>
+				<span class="small">juliewongbandue@gmail.com</span>
+				<img src="images/mail.png" alt="" class="img"
+					data-aos="flip-up"
+	    	 	data-aos-easing="ease-out-cubic">
 			</div>
 		</div>
 
 	</div>
 	<!-- end of wrapper -->
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/typed.js"></script>
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	<script src="js/app.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="js/typed.js"></script>
-<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-<script src="js/app.js"></script>
 
 </html>
