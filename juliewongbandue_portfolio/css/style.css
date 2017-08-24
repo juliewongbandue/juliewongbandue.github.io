@@ -73,7 +73,6 @@ article {
   margin: auto;
   text-align: center;
   background-color: white;
-  height: 60%;
   width: 40vw;
 }
 
@@ -142,13 +141,14 @@ article {
 }
 
 .projectText {
-  width: 25%;
-  margin: auto;
+  width: 45%;
+  margin: auto 0;
   height: 80%;
   overflow: scroll;
   padding:1%;
   line-height: 1.5em;
   background-color: rgb(33,33,33);
+  /*background-color: black;*/
   color: white;
   font-size: 15px;
   font-weight: 100;
