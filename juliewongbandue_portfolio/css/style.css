@@ -12,13 +12,6 @@ a {
 
 /*==========HEADER==========*/
 
-.headerName {
-  position: fixed;
-  font-size: 15px;
-  padding: 10px;
-  color: grey;
-}
-
 .introDiv {
   height: 100vh;
 }
@@ -33,7 +26,7 @@ p {
 }
 
 .small {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .big {
@@ -115,6 +108,7 @@ article {
 .project {
   display: flex;
   height: 100vh;
+  overflow: hidden;
 }
 .projectIcon{
   height: 40px;
@@ -176,6 +170,7 @@ article {
   color: white;
   font-size: 15px;
   font-weight: 300;
+  padding-bottom: 5%;
 }
 
 .contact {
