@@ -19,6 +19,5 @@ $(function() {
     duration: 1200
   })
 
-  
 
 });

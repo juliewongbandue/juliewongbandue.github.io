@@ -4,6 +4,9 @@
   font-size: 30px;
 }
 
+.RobotoCondensed{
+  font-family: 'Roboto Condensed', sans-serif;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -34,6 +37,9 @@ p {
   line-height: 3em;
 }
 
+.header {
+  font-size: 60px;
+}
 article {
   width: 500px;
   padding: 0px 50px 50px 50px;
@@ -118,12 +124,6 @@ article {
   flex-wrap: wrap;
   justify-content: center;
 }
-.flexWrap {
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 5%;
-}
 .projectsDivHeader, .contactDivHeader {
   padding-top: 30px;
 }
@@ -138,7 +138,6 @@ article {
   width: 45%;
   margin: auto 0;
   height: 80%;
-  overflow: scroll;
   padding:1%;
   line-height: 1.5em;
   background-color: rgb(33,33,33);
@@ -150,7 +149,16 @@ article {
   flex-direction: column;
   justify-content: space-around;
 }
-
+.projectAbout{
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify
+}
+.techList{
+  width: 70%;
+  text-align: left;
+  margin: 0 auto;
+}
 .projectText h3 {
   font-weight: 300;
   line-height: 2em;
@@ -162,6 +170,7 @@ article {
 .contactDivHeader {
   background-color: #212121;
   color: white;
+  text-align: center;
 }
 
 .contactDiv {
@@ -173,10 +182,13 @@ article {
   padding-bottom: 5%;
 }
 
-.contact {
+.about {
+  width: 40%;
   margin: auto;
+  text-align: justify;
+  padding-bottom: 2%;
+  line-height: 1.5em;
 }
-
 
 /*============CURSOR FROM TYPED.JS============*/
 
