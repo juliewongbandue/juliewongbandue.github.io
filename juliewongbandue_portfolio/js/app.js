@@ -22,6 +22,8 @@ $(function() {
 
   //BURGER ANIMATION
   $('.nav').hide()
+  const $projectHeader = $('.projectsDivHeader')
+  $projectHeader.hide()
 
 	$('#nav-icon').click(function(){
     console.log('clicked');
@@ -33,5 +35,15 @@ $(function() {
     $('#nav-icon').removeClass('open')
     $('.nav').slideToggle()
   })
+
+  $(window).scroll(function(){
+    let scroll = $(window).scrollTop();
+    if(scroll >= window.innerHeight){
+      $projectHeader.show()
+    } else {
+      $projectHeader.hide()
+    }
+  })
+
 
 });
