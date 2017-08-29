@@ -14,10 +14,24 @@ $(function() {
     ],
     typeSpeed: 0
   });
+
   // AOS SCROLL ANIMATION
   AOS.init({
     duration: 1200
   })
 
+  //BURGER ANIMATION
+  $('.nav').hide()
+
+	$('#nav-icon').click(function(){
+    console.log('clicked');
+    $(this).toggleClass('open')
+    $('.nav').slideToggle()
+  })
+
+  $('.navLink').click(function(){
+    $('#nav-icon').removeClass('open')
+    $('.nav').slideToggle()
+  })
 
 });

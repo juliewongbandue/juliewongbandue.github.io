@@ -11,8 +11,12 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-
+header{
+  padding: 10px 0 0 10px;
+}
+.fixed{
+  position: fixed;
+}
 /*==========HEADER==========*/
 
 .introDiv {
@@ -32,14 +36,19 @@ p {
   font-size: 15px;
 }
 
+.medium {
+  font-size: 25px;
+}
+
 .big {
   font-size: 45px;
   line-height: 3em;
 }
 
-.header {
+.Name {
   font-size: 60px;
 }
+
 article {
   width: 500px;
   padding: 0px 50px 50px 50px;
@@ -59,10 +68,29 @@ article {
   bottom: 0;
   left: 38%;
 }
-
+/*==============NAV==================*/
+.nav{
+  width: 15vw;
+  padding: 30px;
+  margin-top: 20px;
+  background-color: rgba(192,192,192,.9);
+  display: block;
+  text-align: left;
+}
+.navLink{
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+}
+.navLink:hover{
+  color: white;
+  border-bottom: 1px solid black;
+}
+.projectList{
+  margin-left: 10%;
+}
 /*===========SKILLS DIVS ===========*/
 .skillsDiv {
-  display: flex;
   background: #212121;
   color: black;
   height: 100vh;
@@ -81,6 +109,10 @@ article {
 
 .skillsDiv h3 {
   margin-top: 40px;
+}
+
+.skillsDivHeader {
+  color: white;
 }
 
 .skillListItem{
@@ -124,14 +156,9 @@ article {
   flex-wrap: wrap;
   justify-content: center;
 }
-.projectsDivHeader, .contactDivHeader {
-  padding-top: 30px;
-}
 
-.fixed{
-  position: fixed;
-  bottom: 93vh;
-  left: 44%;
+.contactDivHeader {
+  padding-top: 30px;
 }
 
 .projectText {
@@ -188,6 +215,104 @@ article {
   text-align: justify;
   padding-bottom: 2%;
   line-height: 1.5em;
+}
+
+/*======NAV ANIMATION FROM https://codepen.io/designcouch/pen/Atyop =====*/
+
+#nav-icon{
+  width: 60px;
+  height: 45px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 50%;
+  background: black;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+#nav-icon span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 9px 9px 0;
+}
+
+#nav-icon span:nth-child(odd) {
+  left:0px;
+  border-radius: 9px 0 0 9px;
+}
+
+#nav-icon span:nth-child(1), #nav-icon span:nth-child(2) {
+  top: 0px;
+}
+
+#nav-icon span:nth-child(3), #nav-icon span:nth-child(4) {
+  top: 18px;
+}
+
+#nav-icon span:nth-child(5), #nav-icon span:nth-child(6) {
+  top: 36px;
+}
+
+#nav-icon.open span:nth-child(1),#nav-icon.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(2),#nav-icon.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(1) {
+  left: 5px;
+  top: 7px;
+}
+
+#nav-icon.open span:nth-child(2) {
+  left: calc(50% - 5px);
+  top: 7px;
+}
+
+#nav-icon.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+#nav-icon.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+#nav-icon.open span:nth-child(5) {
+  left: 5px;
+  top: 29px;
+}
+
+#nav-icon.open span:nth-child(6) {
+  left: calc(50% - 5px);
+  top: 29px;
 }
 
 /*============CURSOR FROM TYPED.JS============*/
