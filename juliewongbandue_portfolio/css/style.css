@@ -107,10 +107,6 @@ article {
   padding: 70px;
 }
 
-.skillsDiv h3 {
-  margin-top: 40px;
-}
-
 .skillsDivHeader {
   color: white;
 }
@@ -120,15 +116,14 @@ article {
 }
 
 /*============PROJECT DIVS=========*/
-.something {
-  position: fixed;
-  width: 100%;
-  bottom: 90vh;
-}
 .grey {
   color: #212121;
 }
-
+.projectsDivHeader{
+  background-color: rgba(255,255,255,.9);
+  width: 90vw;
+  font-size: 45px;
+}
 .gif {
   height: 400px;
   width: 580px;
@@ -158,7 +153,6 @@ article {
 .flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .contactDivHeader {

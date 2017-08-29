@@ -38,7 +38,10 @@ $(function() {
 
   $(window).scroll(function(){
     let scroll = $(window).scrollTop();
-    if(scroll >= window.innerHeight){
+    console.log('scroll: ', scroll)
+    console.log('innerHeight: ', window.innerHeight + $('.skillsDiv').height())
+    const diff = window.innerHeight + $('.skillsDiv').height()
+    if(scroll >= diff){
       $projectHeader.show()
     } else {
       $projectHeader.hide()
