@@ -3,7 +3,9 @@
   font-family: 'Roboto Mono', monospace;
   font-size: 30px;
 }
-
+.RobotoMono{
+  font-family: 'Roboto Mono', monospace;
+}
 .RobotoCondensed{
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -16,6 +18,9 @@ header{
 }
 .fixed{
   position: fixed;
+}
+.woops{
+  display: none;
 }
 /*==========HEADER==========*/
 
@@ -363,4 +368,43 @@ article {
 
 /*--------media query here for iphone 6--------*/
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)  {
+
+.woops{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.woopsMessage{
+  margin: 0 10%;
+  line-height: 2em;
+  font-size: 37px;
+  text-align: justify;
+}
+.wrapper{
+  display: none;
+}
+.profileImage{
+  width: 80vw;
+}
+.Name{
+  font-size: 100px;
+}
+.introText{
+  padding-top: 6%;
+}
+.contact-icon{
+  width: 15vw;
+}
+nav{
+  position: absolute;
+  bottom: 4%;
+}
+
+}
