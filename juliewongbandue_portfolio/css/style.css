@@ -366,7 +366,7 @@ article {
 }
 
 
-/*--------media query here for iphone 6--------*/
+/*--------media query here for iphone 5--------*/
 
 @media only screen
   and (min-device-width: 320px)
@@ -404,7 +404,5 @@ article {
   }
   nav{
     position: absolute;
-    bottom: 4%;
   }
-
 }
