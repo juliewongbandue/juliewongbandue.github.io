@@ -373,38 +373,38 @@ article {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)  {
 
-.woops{
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  color: black;
-  text-align: center;
-}
-.woopsMessage{
-  margin: 0 10%;
-  line-height: 2em;
-  font-size: 37px;
-  text-align: justify;
-}
-.wrapper{
-  display: none;
-}
-.profileImage{
-  width: 80vw;
-}
-.Name{
-  font-size: 100px;
-}
-.introText{
-  padding-top: 6%;
-}
-.contact-icon{
-  width: 15vw;
-}
-nav{
-  position: absolute;
-  bottom: 4%;
-}
+  .woops{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+  .woopsMessage{
+    margin: 0 10%;
+    line-height: 2em;
+    font-size: 37px;
+    text-align: justify;
+  }
+  .wrapper{
+    display: none;
+  }
+  .profileImage{
+    width: 80vw;
+  }
+  .Name{
+    font-size: 100px;
+  }
+  .introText{
+    padding-top: 6%;
+  }
+  .contact-icon{
+    width: 15vw;
+  }
+  nav{
+    position: absolute;
+    bottom: 4%;
+  }
 
 }
