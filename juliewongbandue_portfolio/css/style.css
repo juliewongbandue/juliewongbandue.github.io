@@ -214,6 +214,13 @@ article {
   padding-bottom: 5%;
 }
 
+.julieAboutImage{
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+
 .about {
   width: 40%;
   margin: auto;
