@@ -121,6 +121,10 @@ article {
 }
 
 /*============PROJECT DIVS=========*/
+.becAndTodd:hover{
+  background-color: white;
+  color: black;
+}
 .grey {
   color: #212121;
 }
