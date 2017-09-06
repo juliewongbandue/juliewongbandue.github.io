@@ -383,7 +383,7 @@ article {
   and (min-device-width: 320px)
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)  {
-
+/*
   .woops{
     display: block;
     width: 100vw;
@@ -415,5 +415,40 @@ article {
   }
   nav{
     position: absolute;
+  }*/
+  .wrapper {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 66px;
   }
+  .skillsDiv{
+    height: 150vh;
+  }
+  .flex{
+    display: flex;
+  }
+  .frontEndDiv,
+  .backEndDiv{
+    margin: 5% auto;
+    width: 75vw;
+    height: 60vh;
+  }
+  .project{
+    display: flex;
+    flex-direction: column;
+  }
+  .projectText{
+    width: 100vw;
+  }
+  .small{
+    font-size: 40px;
+  }
+  .medium{
+    font-size: 50px;
+  }
+  .techList,
+  .projectAbout {
+    width: 90%;
+  }
+
 }
