@@ -416,10 +416,19 @@ article {
   nav{
     position: absolute;
   }*/
+  #nav-icon{
+    display: none;
+  }
   .wrapper {
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     font-size: 66px;
+  }
+  .RobotoCondensed{
+    font-size: 90px;
+  }
+  .contact-icon{
+    width: 15vw
   }
   .skillsDiv{
     height: 150vh;
@@ -436,9 +445,12 @@ article {
   .project{
     display: flex;
     flex-direction: column;
+    height: inherit;
   }
   .projectText{
     width: 100vw;
+    color: black;
+    background-color: white;
   }
   .small{
     font-size: 40px;
@@ -449,6 +461,39 @@ article {
   .techList,
   .projectAbout {
     width: 90%;
+  }
+  .projectText{
+    padding: 0;
+  }
+  .gif {
+    height: 37vh;
+    width: 96vw;
+    border: 1px solid #212121;
+    margin: 10% auto;
+  }
+  .projectIcon{
+    height: 100px;
+    padding: 30px;
+  }
+  .projectNav{
+    background-color: grey;
+    width: inherit;
+  }
+  .about {
+      width: 92%;
+      margin: auto;
+      text-align: justify;
+      padding-bottom: 2%;
+      line-height: 4em;
+  }
+  nav{
+    margin: 0 auto;
+  }
+  article {
+    width: inherit;
+    padding: inherit;
+    height: 63%;
+    position: relative;
   }
 
 }
