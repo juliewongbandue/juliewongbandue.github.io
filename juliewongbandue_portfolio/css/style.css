@@ -1,6 +1,7 @@
 .wrapper {
   text-align: center;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
   font-size: 30px;
 }
 .RobotoMono{
@@ -8,6 +9,12 @@
 }
 .RobotoCondensed{
   font-family: 'Roboto Condensed', sans-serif;
+}
+.Alegreya{
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+.Raleway{
+  font-family: 'Raleway', sans-serif;
 }
 a {
   text-decoration: none;
