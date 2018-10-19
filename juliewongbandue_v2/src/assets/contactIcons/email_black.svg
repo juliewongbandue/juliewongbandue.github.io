@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>email_black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="email_black">
+            <path d="M33.937551,0 C15.2306122,0 0,15.2306122 0,33.937551 C0,52.7693878 15.2306122,68 33.937551,68 C52.6514286,68 68,52.7693878 68,33.937551 C68,15.2306122 52.7693878,0 33.937551,0 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+            <g id="Group" transform="translate(15.000000, 22.000000)" fill="#FFFFFF">
+                <polygon id="Path" points="0 25.904898 0 3 19.4285714 17.3910204 38.8571429 3 38.8571429 25.904898 38.9820408 25.904898"></polygon>
+                <polygon id="Path" points="19.4285714 14.3910204 0 0 38.8571429 0"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
