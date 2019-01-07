@@ -1,3 +1,4 @@
-  :global(body){
-    margin: 0
-  }
+:global(body){
+    margin: 0;
+    font-family: helvetica
+}
