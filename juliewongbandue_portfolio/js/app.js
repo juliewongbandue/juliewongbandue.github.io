@@ -15,11 +15,6 @@ $(function() {
     typeSpeed: 0
   });
 
-  // AOS SCROLL ANIMATION
-  AOS.init({
-    duration: 1200
-  })
-
   //BURGER ANIMATION
   $('.nav').hide()
   const $projectHeader = $('.projectsDivHeader')
