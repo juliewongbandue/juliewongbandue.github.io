@@ -1,8 +1,8 @@
 import React, { Component} from "react";
 import {hot} from "react-hot-loader";
 import Landing from './components/landing.js';
-import Navigation from './components/navigation.js';
 import style from "./styles/Global.css";
+import { TweenLite, TimelineLite } from 'gsap'
 
 class App extends Component{
 
@@ -14,6 +14,8 @@ class App extends Component{
       width: '',
       transform: ''
     }
+    this.mountSection = null;
+    this.animation = null;
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this)
     this.handleScroll = this.handleScroll.bind(this)
   }
@@ -22,6 +24,9 @@ class App extends Component{
     this.updateWindowDimensions();
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.updateWindowDimensions);
+    this.animation = new TimelineLite ({paused: true})
+      .from(this.mountSection, 1, {y: 100, opacity: 0, ease:Sine.easeInOut})
+      .play();
   }
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
@@ -37,14 +42,21 @@ class App extends Component{
     this.setState({
       transform: itemTranslate
     })
-  }  
-  render(){
-    console.log(this.state)
-    return(
-      <div className={style.App}>
-        <Landing 
-          section={this.state.section}/>
+  }
 
+  render(){
+    let section
+    switch (this.state.section){
+      case 'home':
+
+      break
+      default:
+        <Landing/>
+      break
+    }
+    return(
+      <div className={style.App} ref={div => this.mountSection = div}>
+        <Landing/>
       </div>
     );
   }
