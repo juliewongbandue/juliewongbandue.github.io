@@ -5,10 +5,7 @@
     justify-content: center
 }
 .container {
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 12px solid black;
-    border-left: 10px solid black;
+    border: 1px solid black;
     width: 80%;
     height: 80%;
     margin: auto
