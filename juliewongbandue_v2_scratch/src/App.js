@@ -44,7 +44,6 @@ class App extends Component{
       <div className={style.App}>
         <Landing 
           section={this.state.section}/>
-
       </div>
     );
   }
