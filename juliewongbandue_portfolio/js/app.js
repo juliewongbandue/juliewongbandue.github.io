@@ -15,33 +15,5 @@ $(function() {
     typeSpeed: 0
   });
 
-  //BURGER ANIMATION
-  $('.nav').hide()
-  const $projectHeader = $('.projectsDivHeader')
-  $projectHeader.hide()
-
-	$('#nav-icon').click(function(){
-    console.log('clicked');
-    $(this).toggleClass('open')
-    $('.nav').slideToggle()
-  })
-
-  $('.navLink').click(function(){
-    $('#nav-icon').removeClass('open')
-    $('.nav').slideToggle()
-  })
-
-  $(window).scroll(function(){
-    let scroll = $(window).scrollTop();
-    console.log('scroll: ', scroll)
-    console.log('innerHeight: ', window.innerHeight + $('.skillsDiv').height())
-    const diff = window.innerHeight + $('.skillsDiv').height()
-    if(scroll >= diff){
-      $projectHeader.show()
-    } else {
-      $projectHeader.hide()
-    }
-  })
-
 
 });
